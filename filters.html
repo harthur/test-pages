@@ -1,0 +1,27 @@
+<html>
+<head>
+  <style>
+  a {
+    not-property: ?;
+  }
+  </style>
+  
+  <script>
+    var x = b; // error
+  </script>
+  
+  <script>
+    document.all // warn
+  </script>
+  
+  <script>
+    console.log("a log");
+    console.error("an error");
+    console.info("an info");
+    console.warn("a warning");
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
