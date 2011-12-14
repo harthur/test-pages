@@ -6,7 +6,7 @@
       margin: 130px auto;
     }
     
-    .link-box {
+    div {
       margin-bottom: 40px;
     }
 
@@ -30,6 +30,15 @@
     a:active {
       font-weight: bold;
     }
+    
+    input {
+      border: none;
+      outline: 1px solid grey;
+    }
+    
+    input:focus {
+      outline: 2px solid black;
+    }
 
   </style>
 </head>
@@ -40,6 +49,12 @@
     </div>
     <div class="link-box">
       <a href="http://neverbeenherebefore.com">different website</a>
+    </div>
+    <div>
+      <input id="input1"/>
+    </div>
+    <div>
+      <input id="input2"/>
     </div>
   </div>
 </body>
