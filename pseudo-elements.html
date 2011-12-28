@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link rel="stylesheet" href="pseudo-elements.css"/>
+  <style>
+    #container {
+      width: 400px;
+      margin: 130px auto;
+    }
+    
+    #main {
+      width: 10px;
+      height: 10px;
+      padding: 5px;
+      border: 1px solid black;
+    }
+
+    #main:before, #main:after {
+      content: " ";
+      padding: 5px;
+    }
+    
+    #main:before {
+      background-color: mistyrose;
+    }
+    
+    #main:after {
+      background-color: powderblue;
+    }
+
+    #summary {
+      font-family: Georgia;
+    }
+
+    #summary::first-letter {
+      font-weight: bold;
+      color: #666;
+    }
+    
+    #summary::first-line {
+      font-variant: small-caps;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <span id="main">
+        pink then blue
+      </span>
+    </div>
+    <p id="summary">
+      The sun set beyond the hills and the grasshoppers'
+      turned their heads toward the west.
+    </p>
+  </div>
+</body>
+</html>

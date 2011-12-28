@@ -1,0 +1,7 @@
+#summary {
+  color: #222;
+}
+
+#summary::first-letter {
+  color: black;
+}
