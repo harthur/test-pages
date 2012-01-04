@@ -25,6 +25,7 @@
     
     #main:after {
       background-color: powderblue;
+      padding: 5px 10px;
     }
 
     #summary {
@@ -40,6 +41,18 @@
       font-variant: small-caps;
     }
 
+    #summ-parent {
+      color: #111;
+    }
+
+    #summ-parent::first-letter {
+      color: red;
+    }
+    
+    #summ-parent::first-line {
+      font-style: italic;
+    }
+
   </style>
 </head>
 <body>
@@ -49,10 +62,12 @@
         pink then blue
       </span>
     </div>
-    <p id="summary">
-      The sun set beyond the hills and the grasshoppers'
-      turned their heads toward the west.
-    </p>
+    <div id="summ-parent">
+      <p id="summary">
+        The sun set beyond the hills and the grasshoppers'
+        turned their heads toward the west.
+      </p>
+    </div>
   </div>
 </body>
 </html>
