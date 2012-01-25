@@ -1,6 +1,10 @@
 <html>
 <head>
   <style>
+    body {
+      font-family: Lucida, sans-serif;
+    }
+
     #container {
       width: 400px;
       margin: 130px auto;
@@ -18,34 +22,59 @@
     a:visited {
       color: hotpink;
     }
-    
+
     a:link {
       color: violet;
     }
-    
+
     a:hover {
       text-decoration: underline;
     }
-    
+
     a:active {
       font-weight: bold;
     }
-    
+
     input {
       border: none;
       outline: 1px solid grey;
     }
-    
+
     input:focus {
       outline: 2px solid black;
     }
-    
+
     tr:hover {
       background-color: lightgreen;
     }
-    
+
     td:hover {
       color: darkblue;
+    }
+
+    tr {
+      padding: 10px;
+    }
+
+    #test-active {
+      border: solid 1px black;
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+    }
+
+    #test-active-child {
+      border: solid 1px black;
+      height: 30px;
+      width: 30px;
+    }
+
+    #test-active:active {
+      box-shadow: 0 0 2px 3px tomato;
+    }
+
+    #test-active-child:active {
+      box-shadow: 0 0 2px 3px turquoise;
     }
 
   </style>
@@ -73,6 +102,13 @@
         <td>Charles</td><td>21</td>
       </tr>
     </table>
+
+
+    <div id="test-active">
+      <div id="test-active-child">
+      </div>
+    </div>
+
   </div>
 </body>
 </html>
