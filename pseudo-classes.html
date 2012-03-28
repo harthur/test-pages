@@ -17,14 +17,17 @@
     a {
       text-decoration: none;
       padding: 8px;
+      border: 1px solid black;
     }
 
     a:visited {
       color: hotpink;
+      padding: 4px;
     }
 
     a:link {
       color: violet;
+      padding: 30px;
     }
 
     a:hover {
@@ -76,6 +79,14 @@
     #test-active-child:active {
       box-shadow: 0 0 2px 3px turquoise;
     }
+    
+    #test-button {
+      color: black;
+    }
+    
+    #test-button:active {
+      color: white;
+    }
 
   </style>
 </head>
@@ -108,7 +119,10 @@
       <div id="test-active-child">
       </div>
     </div>
-
+    
+    <button id="test-button">
+      Native Button
+    </button>
   </div>
 </body>
 </html>
