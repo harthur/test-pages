@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "BrandonGrotesque";
+  src: url("Brandon_bld.otf") format("opentype");
+}
+
+#header {
+  font-family: "BrandonGrotesque", Helvetica Neue, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#main {
+  width: 400px;
+  margin: auto;
+  font-size: 1.2em;
+}
+
+#description {
+  font-family: Museo Sans, Helvetica, Arial, sans-serif;
+}
+
+#description > p {
+	font-family: Boudin, Baskerville, Georgia, "Times New Roman", serif;
+}
+
+#fallback-font {
+	font-family: Blagh, sans-serif;
+}
