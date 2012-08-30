@@ -28,3 +28,7 @@
 #fallback-font {
 	font-family: Blagh, sans-serif;
 }
+
+#fprop {
+  font: 15px Times New Roman, Georgia, serif;
+}

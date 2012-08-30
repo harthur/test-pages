@@ -1,0 +1,97 @@
+<html>
+<head>
+  <link rel="stylesheet" href="test.css"/>
+  <link rel="stylesheet" href="prism.css"/>
+  <link rel="stylesheet" href="ui.css"/>
+
+  <script src="jquery.js"></script>
+  <script src="test.js"></script>
+  <script src="prism.js"></script>
+  <script src="ui.js"></script>
+
+  <script id="markup" type="text/x-x">
+*
+<html>
+  <head></head>
+  <body>
+    <div id="swatches">
+      <div class="swatch" style="display:none;">
+        first
+      </div>
+      <div class="swatch">
+        <span class="title"></span>
+      </div>
+    </div>
+  </body>
+</html>
+  </script>
+
+</head>
+<body>
+  <div id="container">
+    <div id="samples">
+      <div id="html" class="sample">
+        <pre>
+          <code id="markup-code" class="language-markup">
+          </code>
+        </pre>
+        <div class="color-selector">
+          <div class="color-swatch" data-class="tag"></div>
+          <div class="color-label">tag</div>
+        </div>
+        <div class="color-selector">
+          <div class="color-swatch" data-class="attr-name"></div>
+          <div class="color-label">attribute name</div>
+        </div>
+        <div class="color-selector">
+          <div class="color-swatch" data-class="attr-value"></div>
+          <div class="color-label">attribute value</div>
+        </div>
+      </div>
+      <div id="css" class="sample">
+        <pre>
+          <code class="language-css">
+*
+body {
+  font-family: Lucida, sans-serif;
+  font-weight: bold;
+}
+
+#swatches {
+  width: 200px;
+  margin: 0 auto;
+  color: hsl(20, 30%, 60%)
+}
+
+.swatch {
+  width: 20px;
+  height: 20px;
+}
+          </code>
+        </pre>
+        <div class="color-selector">
+          <div class="color-swatch" data-class="selector"></div>
+          <div class="color-label">selector</div>
+        </div>
+        <div class="color-selector">
+          <div class="color-swatch" data-class="property"></div>
+          <div class="color-label">property name</div>
+        </div>
+      </div>
+      <div id="js"></div>
+    </div>
+
+    <div id="swatches">
+      <div id="string-color" class="color-swatch">
+      </div>
+      <div id="prop-color" class="color-swatch">
+      </div>
+      <div id="name-color" class="color-swatch">
+      </div>
+      <div id="attr-color" class="color-swatch">
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+</body>
+</html>
