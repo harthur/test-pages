@@ -4,6 +4,7 @@
   <link rel="stylesheet" href="prism.css"/>
   <link rel="stylesheet" href="ui.css"/>
 
+  <script src="color.js"></script>
   <script src="jquery.js"></script>
   <script src="test.js"></script>
   <script src="prism.js"></script>
@@ -35,16 +36,19 @@
           <code id="markup-code" class="language-markup">
           </code>
         </pre>
-        <div class="color-selector">
-          <div class="color-swatch" data-class="tag"></div>
+        <div class="color-selector" data-class="tag">
+          <div class="color-swatch"></div>
+          <input class="color-value"></input>
           <div class="color-label">tag</div>
         </div>
-        <div class="color-selector">
-          <div class="color-swatch" data-class="attr-name"></div>
+        <div class="color-selector" data-class="attr-name">
+          <div class="color-swatch"></div>
+          <input class="color-value"></input>
           <div class="color-label">attribute name</div>
         </div>
-        <div class="color-selector">
-          <div class="color-swatch" data-class="attr-value"></div>
+        <div class="color-selector" data-class="attr-value">
+          <div class="color-swatch"></div>
+          <input class="color-value"></input>
           <div class="color-label">attribute value</div>
         </div>
       </div>
@@ -69,27 +73,18 @@ body {
 }
           </code>
         </pre>
-        <div class="color-selector">
-          <div class="color-swatch" data-class="selector"></div>
+        <div class="color-selector" data-class="selector">
+          <div class="color-swatch"></div>
+          <input class="color-value"></input>
           <div class="color-label">selector</div>
         </div>
-        <div class="color-selector">
-          <div class="color-swatch" data-class="property"></div>
+        <div class="color-selector" data-class="property">
+          <div class="color-swatch"></div>
+          <input class="color-value"></input>
           <div class="color-label">property name</div>
         </div>
       </div>
       <div id="js"></div>
-    </div>
-
-    <div id="swatches">
-      <div id="string-color" class="color-swatch">
-      </div>
-      <div id="prop-color" class="color-swatch">
-      </div>
-      <div id="name-color" class="color-swatch">
-      </div>
-      <div id="attr-color" class="color-swatch">
-      </div>
     </div>
   </div>
   <footer></footer>

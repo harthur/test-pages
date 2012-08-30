@@ -61,13 +61,13 @@ pre[class*="language-"] {
 .token.tag,
 .token.boolean,
 .token.number {
-	color: #905;
+	color: black;
 }
 
 .token.selector,
 .token.attr-name,
 .token.string {
-	color: #690;
+	color: black;
 }
 
 .token.operator,
@@ -82,7 +82,7 @@ pre[class*="language-"] {
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-	color: #07a;
+	color: black;
 }
 
 
