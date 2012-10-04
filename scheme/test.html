@@ -1,14 +1,19 @@
 <html>
 <head>
-  <link rel="stylesheet" href="test.css"/>
   <link rel="stylesheet" href="prism.css"/>
-  <link rel="stylesheet" href="ui.css"/>
+  <link rel="stylesheet" href="test.css"/>
+  <link rel="stylesheet" href="spectrum.css"/>
+
+  <style id="dynamic-styles">
+
+  </style>
 
   <script src="color.js"></script>
   <script src="jquery.js"></script>
-  <script src="test.js"></script>
   <script src="prism.js"></script>
   <script src="ui.js"></script>
+  <script src="spectrum.js"></script>
+  <script src="test.js"></script>
 
   <script id="markup" type="text/x-x">
 *
@@ -16,7 +21,7 @@
   <head></head>
   <body>
     <div id="swatches">
-      <div class="swatch" style="display:none;">
+      <div id="fx" style="display:none;">
         first
       </div>
       <div class="swatch">
@@ -29,6 +34,8 @@
 
 </head>
 <body>
+
+  <header>Syntax Highlighting Chooser</header>
   <div id="container">
     <div id="samples">
       <div id="html" class="sample">
@@ -37,17 +44,17 @@
           </code>
         </pre>
         <div class="color-selector" data-class="tag">
-          <div class="color-swatch"></div>
+          <input class="color-swatch"></input>
           <input class="color-value"></input>
           <div class="color-label">tag</div>
         </div>
         <div class="color-selector" data-class="attr-name">
-          <div class="color-swatch"></div>
+          <input class="color-swatch"></input>
           <input class="color-value"></input>
           <div class="color-label">attribute name</div>
         </div>
         <div class="color-selector" data-class="attr-value">
-          <div class="color-swatch"></div>
+          <input class="color-swatch"></input>
           <input class="color-value"></input>
           <div class="color-label">attribute value</div>
         </div>
@@ -74,17 +81,53 @@ body {
           </code>
         </pre>
         <div class="color-selector" data-class="selector">
-          <div class="color-swatch"></div>
+          <input class="color-swatch"></input>
           <input class="color-value"></input>
           <div class="color-label">selector</div>
         </div>
         <div class="color-selector" data-class="property">
-          <div class="color-swatch"></div>
+          <input class="color-swatch"></input>
           <input class="color-value"></input>
           <div class="color-label">property name</div>
         </div>
       </div>
-      <div id="js"></div>
+      <div id="js" class="sample">
+        <pre>
+          <code class="language-javascript">
+*
+/* This is a JavaScript Scratchpad */
+
+var x = "abc";
+var y = "ABC";
+
+function test() {
+  if (x > y) {
+    return "uppercase";
+  }
+  return "lowercase"
+}
+
+// print it out
+var upper = test();
+console.log(upper);
+          </code>
+        </pre>
+        <div class="color-selector" data-class="keyword">
+          <input class="color-swatch"></input>
+          <input class="color-value"></input>
+          <div class="color-label">keyword</div>
+        </div>
+        <div class="color-selector" data-class="string">
+          <input class="color-swatch"></input>
+          <input class="color-value"></input>
+          <div class="color-label">string</div>
+        </div>
+        <div class="color-selector" data-class="comment">
+          <input class="color-swatch"></input>
+          <input class="color-value"></input>
+          <div class="color-label">comment</div>
+        </div>
+      </div>
     </div>
   </div>
   <footer></footer>
