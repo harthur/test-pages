@@ -7,7 +7,6 @@
 code[class*="language-"],
 pre[class*="language-"] {
 	color: black;
-	text-shadow: 0 1px white;
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
@@ -75,8 +74,7 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #a67f59;
-	background: hsla(0,0%,100%,.5);
+	color: black;
 }
 
 .token.atrule,
@@ -88,7 +86,7 @@ pre[class*="language-"] {
 
 .token.regex,
 .token.important {
-	color: #e90;
+	color: black;
 }
 
 .token.important {

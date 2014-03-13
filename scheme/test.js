@@ -27,7 +27,7 @@ $(document).ready(function() {
     });
 
     var color = $(this).spectrum("get");
-    setColor(className, color);
+    setColor(className, color.toRgbString());
   });
 
   $(".color-value").change(function() {
@@ -45,7 +45,6 @@ $(document).ready(function() {
 });
 
 function setColor(className, color) {
-  console.log(className, color);
   var styleSheet = document.styleSheets[3];
 
   var selector = "." + className;
@@ -58,5 +57,9 @@ function setColor(className, color) {
     }
   }
 
-  styleSheet.insertRule(selector + "{ color: " + color + " !important; }", 0);
+  var prop = "color";
+  if (className.indexOf("language") >= 0) {
+    prop = "background-color";
+  }
+  styleSheet.insertRule(selector + "{ " + prop + ": " + color + " !important; }", 0);
 }
