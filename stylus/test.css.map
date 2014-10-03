@@ -1,0 +1,7 @@
+{
+"version":3,
+"sources":["test.styl"],
+"names":[],
+"mappings":"AAKA;EACE,MAA8B,4CAA9B;EACA,YAAY,KAAZ;EACA,OAAO,KAAP;;AAEF;EACE,SAAS,IAAT;EACA,QAAQ,UAAR;EAXA,uBAAuB,IAAvB;EACA,oBAAoB,IAApB;EACA,eAAe,IAAf",
+"file":"test.css"
+}
