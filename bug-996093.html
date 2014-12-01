@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+  canvas {
+    border-radius: 50%;
+    border: 3px solid grey;
+    background-color: #FC7;
+  }
+</style>
+<script>
+  window.setInterval(function drawCanvas() {
+    var canvas = document.querySelector("canvas");
+    var ctx = canvas.getContext("2d");
+    var r = Math.round(Math.random() * 255);
+    var g = Math.round(Math.random() * 255);
+    var b = Math.round(Math.random() * 255);
+    ctx.font = "20px sans-serif"
+    var color = "rgb(" + r + "," + g + "," + b + ")";
+    ctx.strokeStyle = color;
+    ctx.fillStyle = color;
+    ctx.fillText("drawing", 50, 50, 100, 100);
+  }, 200)
+</script>
+</head>
+<body>
+<div>
+<canvas width=200 height=200>
+
+</canvas>
+</div>
+</body>
+</html>
